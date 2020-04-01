@@ -1,0 +1,16 @@
+/* Enter your custom styles here */
+
+/* Section Title class*/
+.sectionTitleClass .sapUxAPObjectPageSectionHeader{
+	display: none;
+}
+
+.shadowBox{
+	box-shadow: 0 0 10px rgba(0,0,0,0.75);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sapUxAPObjectPageLayout-Std-Desktop .sapUxAPBlockContainer {
+    padding: 0rem !important;
+}

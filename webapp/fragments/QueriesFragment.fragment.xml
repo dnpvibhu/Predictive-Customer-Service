@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Dialog>
+		<endButton>
+			<Button text="Cancel" press="handleDialogCancelButton"/>
+		</endButton>
+		<l:VerticalLayout class="sapUiContentPadding" width="100%">
+			<RadioButtonGroup select="onQueryFragmentSelect" buttons="{/filteredQueriesList}" width="500px" class="sapUiMediumMarginBottom">
+				<RadioButton text="{query}"/>
+			</RadioButtonGroup>
+		</l:VerticalLayout>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,118 @@
+{
+	"customerInfo": [{
+		"BP_ID": "123",
+		"Connection_ID": "123374",
+		"Premise_ID": "1233256",
+		"Contract_ID": "995478",
+		"Customer_Name": "Daniel Smith",
+		"Customer_Add": "Alabama, US",
+		"POD": "133890",
+		"Contactperson_ID": "128097",
+		"Number_of_Occupants": "6",
+		"Age": "40",
+		"Vulnerable_Customer": "Yes",
+		"Move_In_Date": "30/03/2018",
+		"Move_Out_Date": "-",
+		"On_DD": "Yes",
+		"On_Paperless_Billing": "Yes",
+		"Payment_Method": "DD",
+		"Current_Tariff": "5.45$",
+		"Current_Tariff_Start_Date": "25/12/2019",
+		"Current_Tariff_End_Date": "-",
+		"Penalty_for_Current_tariff_termination": "3.25$",
+		"Alternative_Tariffs_with_amount": "-",
+		"Start_Date_of_Active_P2P": "25/12/2019",
+		"End_Date_of_Active_P2P": "-",
+		"Billing_Frequeny": "M",
+		"Current_Non_Energy_Services": "123",
+		"Last_Late_Payment_Fee": "07/02/2020 | 45.32$",
+		"Current_Dunning_Step": "123"
+	},{
+		"BP_ID": "456",
+		"Connection_ID": "123987",
+		"Premise_ID": "12343",
+		"Contract_ID": "99523",
+		"Customer_Name": "Ragnar White",
+		"Customer_Add": "Texas, US",
+		"POD": "5687",
+		"Contactperson_ID": "687865",
+		"Number_of_Occupants": "3",
+		"Age": "30",
+		"Vulnerable_Customer": "No",
+		"Move_In_Date": "23/03/2018",
+		"Move_Out_Date": "-",
+		"On_DD": "Yes",
+		"On_Paperless_Billing": "Yes",
+		"Payment_Method": "DD",
+		"Current_Tariff": "4.45$",
+		"Current_Tariff_Start_Date": "25/12/2019",
+		"Current_Tariff_End_Date": "-",
+		"Penalty_for_Current_tariff_termination": "3.25$",
+		"Alternative_Tariffs_with_amount": "-",
+		"Start_Date_of_Active_P2P": "25/12/2019",
+		"End_Date_of_Active_P2P": "-",
+		"Billing_Frequeny": "M",
+		"Current_Non_Energy_Services": "123",
+		"Last_Late_Payment_Fee": "07/02/2020 | 45.32$",
+		"Current_Dunning_Step": "123"
+	}],
+
+	"Queries": [{
+		"key": "A1#ZA000001#Z101",
+		"query": "Balance, Refund and Payment"
+	}, {
+		"key": "A1#ZA000001#Z102",
+		"query": "Bill and Tariff"
+	}, {
+		"key":"A1#ZA000001#Z103",
+		"query": "Account Data and Set Up    "
+	}, {
+		"key":"A1#ZA000001#Z104",
+		"query": "Meter  Read  and Consumption"
+	}, {
+		"key":"A1#ZA000001#Z105",
+		"query": "Payment Arrangement"
+	}, {
+		"key":"A1#ZA000001#Z106",
+		"query":"Move Related" 
+	}, {
+		"key":"A1#ZA000001#Z107",
+		"query": "Meter, Supply and Site"
+	}, {
+		"key":"A1#ZA000001#Z108",
+		"query": "Service and Job"
+	}, {
+		"key":"A1#ZA000001#Z109",
+		"query": "Discount and Concession"
+	}, {
+		"key":"A1#ZA000001#Z111",
+		"query": "Complaint"
+	}, {
+		"key":"A1#ZA000001#Z110",
+		"query": "Other"
+	}],
+
+	"NBA": [{
+		"nbaName": "Financials"
+	},{
+		"nbaName": "Bill and Tariff"
+	},{
+		"nbaName": "Account Data and Set Up"
+	},{
+		"nbaName": "Consumption"
+	},{
+		"nbaName":"Payment Arrangement" 
+	},{
+		"nbaName": "Move Related"
+	},{
+		"nbaName":"Meter , Supply and Site" 
+	},{
+		"nbaName": "Service and Job"
+	},{
+		"nbaName": "Discount and Concession"
+	},{
+		"nbaName": "Complaint"
+	},{
+		"nbaName": "Other"
+	} ]
+}
