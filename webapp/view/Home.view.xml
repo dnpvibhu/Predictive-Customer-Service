@@ -1,5 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns="sap.uxap"
 	controllerName="com.wipro.ccs.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:layout="sap.ui.layout" height="100%">
+	
+	
 	<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" selectedSection="paymentSubSection">
 		<headerTitle>
 			<ObjectPageDynamicHeaderTitle>
