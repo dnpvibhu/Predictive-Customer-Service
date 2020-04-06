@@ -134,7 +134,7 @@
 													<m:Title text="Possible Customer Query"/>
 													<layout:HorizontalLayout class="sapUiTinyMargin">
 														<layout:VerticalLayout class="sapUiSmallMarginEnd">
-															<m:RadioButtonGroup select="onQuerySelect" buttons="{/queriesList}" width="300px" >
+															<m:RadioButtonGroup id="queryRadioButtonGroup" select="onQuerySelect" buttons="{/queriesList}" width="300px" >
 																<m:RadioButton  text="{query}"/>
 															</m:RadioButtonGroup>
 															<!--<m:ComboBox class="sapUiSizeCompact" items="{ path: '/Queries', sorter: { path: 'query' } }">-->

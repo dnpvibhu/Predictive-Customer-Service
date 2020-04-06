@@ -65,10 +65,10 @@
 		"query": "Bill and Tariff"
 	}, {
 		"key":"A1#ZA000001#Z103",
-		"query": "Account Data and Set Up    "
+		"query": "Account Data and Set Up"
 	}, {
 		"key":"A1#ZA000001#Z104",
-		"query": "Meter  Read  and Consumption"
+		"query": "Meter Read and Consumption"
 	}, {
 		"key":"A1#ZA000001#Z105",
 		"query": "Payment Arrangement"
@@ -88,7 +88,7 @@
 		"key":"A1#ZA000001#Z111",
 		"query": "Complaint"
 	}, {
-		"key":"A1#ZA000001#Z110",
+		"key":"other",
 		"query": "Other"
 	}],
 

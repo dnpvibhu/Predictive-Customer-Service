@@ -14,8 +14,35 @@ sap.ui.define([
 			oRouter.getRoute("Home").attachPatternMatched(function (oEvent) {
 				var url = new URL(window.location.href);
 				var bp_id = url.searchParams.get("bp_id") + "";
+				var cat1 = url.searchParams.get("cat1") + "";
+				var cat2 = url.searchParams.get("cat2") + "";
+				var cat3 = url.searchParams.get("cat3") + "";
+				var cat4 = url.searchParams.get("cat4") + "";
+				var selCat = url.searchParams.get("sel_cat") + "";
 
 				if (bp_id) {
+					var urlParameters = [cat1, cat2, cat3];
+					var newKeyValuePair = [];
+					var KVWord = [];
+					selCat = selCat.split(':', 2);
+
+					var KVItem;
+					for (var index = 0; index < urlParameters.length; index++) {
+						var theString = urlParameters[index];
+						var parts = theString.split(':', 2);
+						var theKey = parts[0];
+						var theValue = parts[1];
+						KVWord.push(theValue);
+						KVItem = {
+							"key": theKey,
+							"query": theValue
+						};
+						newKeyValuePair.push(KVItem);
+					}
+
+					console.log(KVWord.indexOf(selCat[1]));
+					this.getView().byId("queryRadioButtonGroup").setSelectedIndex(KVWord.indexOf(selCat[1]));
+
 					var oModel = _.filter(this.getView().getModel().getProperty("/customerInfo"), function (obj) {
 						return obj.BP_ID === bp_id;
 					});
@@ -24,17 +51,17 @@ sap.ui.define([
 					var oObjectPageLayout = this.byId("ObjectPageLayout");
 					oObjectPageLayout.setShowFooter(!oObjectPageLayout.getShowFooter());
 
-					var querymodel;
+					var querymodel = JSON.parse(JSON.stringify(newKeyValuePair));
 					var newmodel = this.getView().getModel().getProperty("/Queries");
-					//console.log(newmodel);
-					querymodel = JSON.parse(JSON.stringify(newmodel));
-					querymodel.length = 3;
+					// //console.log(newmodel);
+					// querymodel = JSON.parse(JSON.stringify(newmodel));
+					// querymodel.length = 3;
 					querymodel.push({
-						"key": "A1#ZA000001#Z110",
+						"key": "other",
 						"query": "Other"
 					});
 					this.getView().getModel().setProperty("/queriesList", querymodel);
-					var myArray = newmodel;
+					var myArray = JSON.parse(JSON.stringify(newmodel));
 					var toRemove = querymodel;
 
 					for (var i = myArray.length - 1; i >= 0; i--) {
