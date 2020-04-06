@@ -27,7 +27,7 @@
 		"Current_Non_Energy_Services": "123",
 		"Last_Late_Payment_Fee": "07/02/2020 | 45.32$",
 		"Current_Dunning_Step": "123"
-	},{
+	}, {
 		"BP_ID": "456",
 		"Connection_ID": "123987",
 		"Premise_ID": "12343",
@@ -64,55 +64,101 @@
 		"key": "A1#ZA000001#Z102",
 		"query": "Bill and Tariff"
 	}, {
-		"key":"A1#ZA000001#Z103",
+		"key": "A1#ZA000001#Z103",
 		"query": "Account Data and Set Up"
 	}, {
-		"key":"A1#ZA000001#Z104",
+		"key": "A1#ZA000001#Z104",
 		"query": "Meter Read and Consumption"
 	}, {
-		"key":"A1#ZA000001#Z105",
+		"key": "A1#ZA000001#Z105",
 		"query": "Payment Arrangement"
 	}, {
-		"key":"A1#ZA000001#Z106",
-		"query":"Move Related" 
+		"key": "A1#ZA000001#Z106",
+		"query": "Move Related"
 	}, {
-		"key":"A1#ZA000001#Z107",
+		"key": "A1#ZA000001#Z107",
 		"query": "Meter, Supply and Site"
 	}, {
-		"key":"A1#ZA000001#Z108",
+		"key": "A1#ZA000001#Z108",
 		"query": "Service and Job"
 	}, {
-		"key":"A1#ZA000001#Z109",
+		"key": "A1#ZA000001#Z109",
 		"query": "Discount and Concession"
 	}, {
-		"key":"A1#ZA000001#Z111",
+		"key": "A1#ZA000001#Z111",
 		"query": "Complaint"
 	}, {
-		"key":"other",
+		"key": "other",
 		"query": "Other"
+	}],
+
+	"Mapping": [{
+		"S/4 HANA Reason Key": "A1#ZA000001#Z101",
+		"ReasonText": "Balance, Refund and Payment",
+		"NBA": "Financials"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z102",
+		"ReasonText": "Bill and Tariff",
+		"NBA": "Bill and Tariff"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z103",
+		"ReasonText": "Account Data and Set Up",
+		"NBA": "Account Data and Set Up"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z104",
+		"ReasonText": "Meter Read and Consumption",
+		"NBA": "Consumption"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z105",
+		"ReasonText": "Payment Arrangement",
+		"NBA": "Payment Arrangement"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z106",
+		"ReasonText": "Move Related",
+		"NBA": "Move Related"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z107",
+		"ReasonText": "Meter, Supply and Site",
+		"NBA": "Meter , Supply and Site"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z108",
+		"ReasonText": "Service and Job",
+		"NBA": "Service and Job"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z109",
+		"ReasonText": "Discount and Concession",
+		"NBA": "Discount and Concession"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z110",
+		"ReasonText": "Other",
+		"NBA": "Other"
+	}, {
+		"S/4 HANA Reason Key": "A1#ZA000001#Z111",
+		"ReasonText": "Complaint",
+		"NBA": "Complaint"
 	}],
 
 	"NBA": [{
 		"nbaName": "Financials"
-	},{
+	}, {
 		"nbaName": "Bill and Tariff"
-	},{
+	}, {
 		"nbaName": "Account Data and Set Up"
-	},{
+	}, {
 		"nbaName": "Consumption"
-	},{
-		"nbaName":"Payment Arrangement" 
-	},{
+	}, {
+		"nbaName": "Payment Arrangement"
+	}, {
 		"nbaName": "Move Related"
-	},{
-		"nbaName":"Meter , Supply and Site" 
-	},{
+	}, {
+		"nbaName": "Meter , Supply and Site"
+	}, {
 		"nbaName": "Service and Job"
-	},{
+	}, {
 		"nbaName": "Discount and Concession"
-	},{
+	}, {
 		"nbaName": "Complaint"
-	},{
+	}, {
 		"nbaName": "Other"
-	} ]
+	}]
 }

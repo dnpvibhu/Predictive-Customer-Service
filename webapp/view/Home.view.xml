@@ -147,7 +147,7 @@
 											</m:FlexBox>
 											<m:FlexBox wrap="Wrap" fitContainer="true" class="sapUiSmallMarginTop ">
 												<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-													<m:Title text="Next Best Action"/>
+													<m:Title text="{/NBAName}"/>
 													<layout:HorizontalLayout class="sapUiTinyMargin">
 														<layout:VerticalLayout class="sapUiSmallMarginEnd">
 															<m:RadioButtonGroup select="onNBASelect" buttons="{/nbaList}" width="300px" >

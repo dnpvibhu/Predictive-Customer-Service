@@ -20,6 +20,8 @@ sap.ui.define([
 				var cat4 = url.searchParams.get("cat4") + "";
 				var selCat = url.searchParams.get("sel_cat") + "";
 
+				this.getView().getModel().setProperty("/NBAName", "Next Best Action");
+
 				if (bp_id) {
 					var urlParameters = [cat1, cat2, cat3];
 					var newKeyValuePair = [];
@@ -40,7 +42,6 @@ sap.ui.define([
 						newKeyValuePair.push(KVItem);
 					}
 
-					console.log(KVWord.indexOf(selCat[1]));
 					this.getView().byId("queryRadioButtonGroup").setSelectedIndex(KVWord.indexOf(selCat[1]));
 
 					var oModel = _.filter(this.getView().getModel().getProperty("/customerInfo"), function (obj) {
@@ -71,7 +72,6 @@ sap.ui.define([
 							}
 						}
 					}
-
 					this.getView().getModel().setProperty("/filteredQueriesList", myArray);
 
 					var nbaQueryModel;
@@ -94,7 +94,6 @@ sap.ui.define([
 							}
 						}
 					}
-
 					this.getView().getModel().setProperty("/filteredNBAList", myUniqueNbaArray);
 					console.log(oModel);
 				} else {
@@ -119,7 +118,57 @@ sap.ui.define([
 					this.queryDialog.open();
 				});
 			} else {
-				console.log(selectedQuery);
+				var oModelResonText = _.filter(this.getView().getModel().getProperty("/Mapping"), function (obj) {
+					return obj.ReasonText === selectedQuery;
+				});
+				var reason = oModelResonText[0].NBA;
+
+				this.getView().getModel().setProperty("/NBAName", "Next Best Action - " + reason);
+
+				var settings = {
+					'cache': false,
+					'dataType': "json",
+					"async": true,
+					"crossDomain": true,
+					"contentType": "application/json",
+					"data": JSON.stringify([{
+						"__type__": "body",
+						"Onit": "m_yes, d_yes, e_yes, o_no",
+						"Asked": "m_yes, d_yes, e_yes, o_no"
+					}]),
+					"url": "/BusinessRules/TW_businessrules_v4/BR_RS_DT",
+					"method": "POST",
+					"processData": false,
+					"headers": {
+						"accept": "application/json",
+						"Access-Control-Allow-Origin": "*",
+						"Postman-Token": "bc3c98f0-5ae1-4d29-a4d7-881376f9d38a",
+						"Cache-Control": "no-cache"
+							//"Authorization": oauth
+					}
+				};
+				this.getView().setBusy(true);
+				var responseArray = [];
+				var res;
+				$.ajax(settings).done(function (response) {
+					if (response.length) {
+						MessageToast.show(response[0].NBA);
+						for (var i = 0; i < response.length; i++) {
+							res = {
+								"nbaName": response[i].NBA
+							};
+							responseArray.push(res);
+						}
+						this.getView().getModel().setProperty("/nbaList", responseArray);
+						this.getView().setBusy(false);
+					} else {
+						MessageToast.show("No Offer");
+						console.log("No Offer");
+						this.getView().setBusy(false);
+					}
+					// this.getView().getModel().setProperty("/sapResponse", response[0].NBA);
+				}.bind(this));
+
 			}
 
 		},
