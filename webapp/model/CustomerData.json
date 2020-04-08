@@ -94,47 +94,47 @@
 
 	"Mapping": [{
 		"S/4 HANA Reason Key": "A1#ZA000001#Z101",
-		"ReasonText": "Balance, Refund and Payment",
+		"ReasonText": "BALANCE, REFUND AND PAYMENT",
 		"NBA": "Financials"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z102",
-		"ReasonText": "Bill and Tariff",
+		"ReasonText": "BILL AND TARIFF",
 		"NBA": "Bill and Tariff"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z103",
-		"ReasonText": "Account Data and Set Up",
+		"ReasonText": "ACCOUNT DATA AND SET UP",
 		"NBA": "Account Data and Set Up"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z104",
-		"ReasonText": "Meter Read and Consumption",
+		"ReasonText": "METER READ AND CONSUMPTION",
 		"NBA": "Consumption"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z105",
-		"ReasonText": "Payment Arrangement",
+		"ReasonText": "PAYMENT ARRANGEMENT",
 		"NBA": "Payment Arrangement"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z106",
-		"ReasonText": "Move Related",
+		"ReasonText": "MOVE RELATED",
 		"NBA": "Move Related"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z107",
-		"ReasonText": "Meter, Supply and Site",
+		"ReasonText": "METER, SUPPLY AND SITE",
 		"NBA": "Meter , Supply and Site"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z108",
-		"ReasonText": "Service and Job",
+		"ReasonText": "SERVICE AND JOB",
 		"NBA": "Service and Job"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z109",
-		"ReasonText": "Discount and Concession",
+		"ReasonText": "DISCOUNT AND CONCESSION",
 		"NBA": "Discount and Concession"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z110",
-		"ReasonText": "Other",
+		"ReasonText": "OTHER",
 		"NBA": "Other"
 	}, {
 		"S/4 HANA Reason Key": "A1#ZA000001#Z111",
-		"ReasonText": "Complaint",
+		"ReasonText": "COMPLAINT",
 		"NBA": "Complaint"
 	}],
 

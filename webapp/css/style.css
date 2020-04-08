@@ -11,6 +11,10 @@
     border-radius: 0.5rem;
 }
 
+.sapUiBody{
+    overflow : hidden;
+}
+
 .sapUxAPObjectPageLayout-Std-Desktop .sapUxAPBlockContainer {
     padding: 0rem !important;
 }

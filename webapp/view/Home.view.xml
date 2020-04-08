@@ -1,194 +1,200 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns="sap.uxap"
 	controllerName="com.wipro.ccs.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:layout="sap.ui.layout" height="100%">
-	
-	
-	<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" selectedSection="paymentSubSection">
-		<headerTitle>
-			<ObjectPageDynamicHeaderTitle>
-				<breadcrumbs>
-					<m:Breadcrumbs currentLocationText="{/custInfo/0/BP_ID}" class="sapUiTinyMarginTop">
-						<m:Link text="Customer Service"/>
-					</m:Breadcrumbs>
-				</breadcrumbs>
-				<expandedHeading>
-					<m:FlexBox fitContainer="true" alignItems="Center">
-						<m:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiTinyMarginEnd"/>
-						<m:FlexBox wrap="Wrap" fitContainer="true">
-							<layout:VerticalLayout class="sapUiLargeMarginEnd">
-								<m:Title text="{/custInfo/0/Customer_Name}" wrapping="true"/>
-								<m:Text text="{/custInfo/0/Customer_Add}"/>
-							</layout:VerticalLayout>
-							<layout:VerticalLayout class="sapUiLargeMarginBeginEnd">
-								<m:Title text="Contract Account" wrapping="true"/>
-								<m:Text text="{/custInfo/0/Contract_ID}"/>
-							</layout:VerticalLayout>
-							<layout:VerticalLayout class="sapUiLargeMarginBeginEnd">
-								<m:Title text="No. of Occupants" wrapping="true"/>
-								<m:Text text="{/custInfo/0/Number_of_Occupants}"/>
-							</layout:VerticalLayout>
-						</m:FlexBox>
-					</m:FlexBox>
-				</expandedHeading>
-				<snappedHeading>
-					<m:FlexBox fitContainer="true" alignItems="Center">
-						<m:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiTinyMarginEnd"/>
-						<m:FlexBox wrap="Wrap" fitContainer="true">
-							<layout:VerticalLayout class="sapUiLargeMarginEnd">
-								<m:Title text="{/custInfo/0/Customer_Name}" wrapping="true"/>
-								<m:Text text="{/custInfo/0/Customer_Add}"/>
-							</layout:VerticalLayout>
-							<layout:VerticalLayout class="sapUiLargeMarginBeginEnd">
-								<m:Title text="Contract Account" wrapping="true"/>
-								<m:Text text="{/custInfo/0/Contract_ID}"/>
-							</layout:VerticalLayout>
-							<layout:VerticalLayout class="sapUiLargeMarginBeginEnd">
-								<m:Title text="No. of Occupants" wrapping="true"/>
-								<m:Text text="{/custInfo/0/Number_of_Occupants}"/>
-							</layout:VerticalLayout>
-						</m:FlexBox>
-					</m:FlexBox>
-				</snappedHeading>
-				<expandedContent></expandedContent>
-				<snappedContent>
-					<m:FlexBox fitContainer="true" alignItems="Center">
-						<m:FlexBox wrap="Wrap" fitContainer="true">
-							<layout:HorizontalLayout>
-								<m:Text text="Current Tarrif: {/custInfo/0/Current_Tariff}" class="sapUiSmallMarginBeginEnd sapUiTinyMargin"/>
-								<m:Text text="Current Tarrif Termination Penalty: {/custInfo/0/Penalty_for_Current_tariff_termination}"
-									class="sapUiSmallMarginBeginEnd sapUiTinyMargin"/>
-								<m:Text text="Last P2P: {/custInfo/0/Last_Late_Payment_Fee}" class="sapUiSmallMarginBeginEnd sapUiTinyMargin"/>
-							</layout:HorizontalLayout>
-						</m:FlexBox>
-					</m:FlexBox>
-				</snappedContent>
-				<!--<actions>
+
+			<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" selectedSection="paymentSubSection">
+				<headerTitle>
+					<ObjectPageDynamicHeaderTitle>
+						<breadcrumbs>
+							<m:Breadcrumbs currentLocationText="{/custInfo/0/BP_ID}" class="sapUiTinyMarginTop">
+								<m:Link text="Customer Service"/>
+							</m:Breadcrumbs>
+						</breadcrumbs>
+						<expandedHeading>
+							<m:FlexBox fitContainer="true" alignItems="Center">
+								<m:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiTinyMarginEnd"/>
+								<m:FlexBox wrap="Wrap" fitContainer="true">
+									<layout:VerticalLayout class="sapUiLargeMarginEnd">
+										<m:Title text="{/custInfo/0/Customer_Name}" wrapping="true"/>
+										<m:Text text="{/custInfo/0/Customer_Add}"/>
+									</layout:VerticalLayout>
+									<layout:VerticalLayout class="sapUiLargeMarginBeginEnd">
+										<m:Title text="Contract Account" wrapping="true"/>
+										<m:Text text="{/custInfo/0/Contract_ID}"/>
+									</layout:VerticalLayout>
+									<layout:VerticalLayout class="sapUiLargeMarginBeginEnd">
+										<m:Title text="No. of Occupants" wrapping="true"/>
+										<m:Text text="{/custInfo/0/Number_of_Occupants}"/>
+									</layout:VerticalLayout>
+								</m:FlexBox>
+							</m:FlexBox>
+						</expandedHeading>
+						<snappedHeading>
+							<m:FlexBox fitContainer="true" alignItems="Center">
+								<m:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiTinyMarginEnd"/>
+								<m:FlexBox wrap="Wrap" fitContainer="true">
+									<layout:VerticalLayout class="sapUiLargeMarginEnd">
+										<m:Title text="{/custInfo/0/Customer_Name}" wrapping="true"/>
+										<m:Text text="{/custInfo/0/Customer_Add}"/>
+									</layout:VerticalLayout>
+									<layout:VerticalLayout class="sapUiLargeMarginBeginEnd">
+										<m:Title text="Contract Account" wrapping="true"/>
+										<m:Text text="{/custInfo/0/Contract_ID}"/>
+									</layout:VerticalLayout>
+									<layout:VerticalLayout class="sapUiLargeMarginBeginEnd">
+										<m:Title text="No. of Occupants" wrapping="true"/>
+										<m:Text text="{/custInfo/0/Number_of_Occupants}"/>
+									</layout:VerticalLayout>
+								</m:FlexBox>
+							</m:FlexBox>
+						</snappedHeading>
+						<expandedContent></expandedContent>
+						<snappedContent>
+							<m:FlexBox fitContainer="true" alignItems="Center">
+								<m:FlexBox wrap="Wrap" fitContainer="true">
+									<layout:HorizontalLayout>
+										<m:Text text="Current Tarrif: {/custInfo/0/Current_Tariff}" class="sapUiSmallMarginBeginEnd sapUiTinyMargin"/>
+										<m:Text text="Current Tarrif Termination Penalty: {/custInfo/0/Penalty_for_Current_tariff_termination}"
+											class="sapUiSmallMarginBeginEnd sapUiTinyMargin"/>
+										<m:Text text="Last P2P: {/custInfo/0/Last_Late_Payment_Fee}" class="sapUiSmallMarginBeginEnd sapUiTinyMargin"/>
+									</layout:HorizontalLayout>
+								</m:FlexBox>
+							</m:FlexBox>
+						</snappedContent>
+						<!--<actions>
 					<m:OverflowToolbarButton icon="sap-icon://pull-down" text="show section" type="Emphasized" tooltip="pull-down"/>
 					<m:OverflowToolbarButton icon="sap-icon://show" text="show state" type="Emphasized" tooltip="show"/>
 				</actions>-->
-			</ObjectPageDynamicHeaderTitle>
-		</headerTitle>
-		<headerContent>
-			<m:FlexBox wrap="Wrap" fitContainer="true">
-				<layout:VerticalLayout class="sapUiSmallMarginEnd">
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="Vulnarable Customer: "/>
-						<m:Text text="{/custInfo/0/Vulnerable_Customer}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="Paperless Billing: "/>
-						<m:Text text="{/custInfo/0/On_Paperless_Billing}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-				</layout:VerticalLayout>
-				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="Move-In:"/>
-						<m:Text text="{/custInfo/0/Move_In_Date}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="Payment Method:"/>
-						<m:Text text="{/custInfo/0/Payment_Method}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-				</layout:VerticalLayout>
-				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="DD:"/>
-						<m:Text text="{/custInfo/0/On_DD}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="Billing Frequency:"/>
-						<m:Text text="{/custInfo/0/Billing_Frequeny}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-				</layout:VerticalLayout>
-				<layout:VerticalLayout class="sapUiSmallMarginEnd">
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="Current Tarrif:"/>
-						<m:Text text="{/custInfo/0/Current_Tariff}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="Last P2P:"/>
-						<m:Text text="{/custInfo/0/Last_Late_Payment_Fee}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-				</layout:VerticalLayout>
-				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-					<layout:HorizontalLayout class="sapUiTinyMargin">
-						<m:Label text="Current Tarrif Termination Penalty:"/>
-						<m:Text text="{/custInfo/0/Penalty_for_Current_tariff_termination}" class="sapUiTinyMarginBegin"/>
-					</layout:HorizontalLayout>
-				</layout:VerticalLayout>
-			</m:FlexBox>
-		</headerContent>
-		<sections>
-			<ObjectPageSection class="sectionTitleClass">
-				<subSections>
-					<ObjectPageSubSection >
-						<blocks>
-							<layout:Grid hSpacing="2" defaultSpan="L6 M6 S10">
-								<layout:content>
-									<m:FlexBox fitContainer="true" alignItems="Center">
-										<m:layoutData>
-											<layout:GridData span="L8 M8 S12"/>
-										</m:layoutData>
-										<layout:VerticalLayout>
-											<m:FlexBox wrap="Wrap" fitContainer="true" class="sapUiSmallMarginBottom ">
-												<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-													<m:Title text="Possible Customer Query"/>
-													<layout:HorizontalLayout class="sapUiTinyMargin">
-														<layout:VerticalLayout class="sapUiSmallMarginEnd">
-															<m:RadioButtonGroup id="queryRadioButtonGroup" select="onQuerySelect" buttons="{/queriesList}" width="300px" >
-																<m:RadioButton  text="{query}"/>
-															</m:RadioButtonGroup>
-															<!--<m:ComboBox class="sapUiSizeCompact" items="{ path: '/Queries', sorter: { path: 'query' } }">-->
-															<!--	<core:Item key="{key}" text="{query}"/>-->
-															<!--</m:ComboBox>-->
+					</ObjectPageDynamicHeaderTitle>
+				</headerTitle>
+				<headerContent>
+					<m:FlexBox wrap="Wrap" fitContainer="true">
+						<layout:VerticalLayout class="sapUiSmallMarginEnd">
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="Vulnarable Customer: "/>
+								<m:Text text="{/custInfo/0/Vulnerable_Customer}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="Paperless Billing: "/>
+								<m:Text text="{/custInfo/0/On_Paperless_Billing}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="Move-In:"/>
+								<m:Text text="{/custInfo/0/Move_In_Date}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="Payment Method:"/>
+								<m:Text text="{/custInfo/0/Payment_Method}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="DD:"/>
+								<m:Text text="{/custInfo/0/On_DD}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="Billing Frequency:"/>
+								<m:Text text="{/custInfo/0/Billing_Frequeny}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout class="sapUiSmallMarginEnd">
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="Current Tarrif:"/>
+								<m:Text text="{/custInfo/0/Current_Tariff}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="Last P2P:"/>
+								<m:Text text="{/custInfo/0/Last_Late_Payment_Fee}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+							<layout:HorizontalLayout class="sapUiTinyMargin">
+								<m:Label text="Current Tarrif Termination Penalty:"/>
+								<m:Text text="{/custInfo/0/Penalty_for_Current_tariff_termination}" class="sapUiTinyMarginBegin"/>
+							</layout:HorizontalLayout>
+						</layout:VerticalLayout>
+					</m:FlexBox>
+				</headerContent>
+				<sections>
+					<ObjectPageSection class="sectionTitleClass">
+						<subSections>
+							<ObjectPageSubSection >
+								<blocks>
+									<layout:Grid hSpacing="2" defaultSpan="L6 M6 S10">
+										<layout:content>
+											<m:FlexBox fitContainer="true" alignItems="Center">
+												<m:layoutData>
+													<layout:GridData span="L8 M8 S12"/>
+												</m:layoutData>
+												<layout:VerticalLayout>
+													<m:FlexBox wrap="Wrap" fitContainer="true" class="sapUiSmallMarginBottom ">
+														<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+															<m:Title text="Possible Customer Query"/>
+															<layout:HorizontalLayout class="sapUiTinyMargin">
+																<layout:VerticalLayout class="sapUiSmallMarginEnd">
+																	<m:RadioButtonGroup id="queryRadioButtonGroup" select="onQuerySelect" buttons="{/queriesList}" width="300px">
+																		<m:RadioButton text="{query}"/>
+																	</m:RadioButtonGroup>
+																	<!--<m:ComboBox class="sapUiSizeCompact" items="{ path: '/Queries', sorter: { path: 'query' } }">-->
+																	<!--	<core:Item key="{key}" text="{query}"/>-->
+																	<!--</m:ComboBox>-->
+																</layout:VerticalLayout>
+																<layout:VerticalLayout class="sapUiSmallMarginEnd">
+																	<m:Label text="Action"/>
+																	<m:TextArea placeholder="Actions taken.." rows="5" class="sapUiSizeCompact" value="{/otherQuery}"/>
+																</layout:VerticalLayout>
+															</layout:HorizontalLayout>
 														</layout:VerticalLayout>
-														<m:TextArea rows="8" class="sapUiSizeCompact" value="{/otherQuery}"/>
-													</layout:HorizontalLayout>
+													</m:FlexBox>
+													<m:FlexBox wrap="Wrap" fitContainer="true" class="sapUiSmallMarginTop ">
+														<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+															<m:Title text="{/NBAName}"/>
+															<layout:HorizontalLayout class="sapUiTinyMargin">
+																<layout:VerticalLayout class="sapUiSmallMarginEnd">
+																	<m:RadioButtonGroup select="onNBASelect" buttons="{/nbaList}" width="300px">
+																		<m:RadioButton text="{nbaName}"/>
+																	</m:RadioButtonGroup>
+																	<!--<m:ComboBox class="sapUiSizeCompact" items="{ path: '/NBA', sorter: { path: 'nbaName' } }">-->
+																	<!--	<core:Item key="{key}" text="{nbaName}"/>-->
+																	<!--</m:ComboBox>-->
+																</layout:VerticalLayout>
+																<layout:VerticalLayout class="sapUiSmallMarginEnd">
+																	<m:Label text="Action"/>
+																	<m:TextArea placeholder="Actions taken.." rows="5" class="sapUiSizeCompact" value="{/actionsTaken}"/>
+																</layout:VerticalLayout>
+															</layout:HorizontalLayout>
+														</layout:VerticalLayout>
+													</m:FlexBox>
 												</layout:VerticalLayout>
 											</m:FlexBox>
-											<m:FlexBox wrap="Wrap" fitContainer="true" class="sapUiSmallMarginTop ">
-												<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-													<m:Title text="{/NBAName}"/>
-													<layout:HorizontalLayout class="sapUiTinyMargin">
-														<layout:VerticalLayout class="sapUiSmallMarginEnd">
-															<m:RadioButtonGroup select="onNBASelect" buttons="{/nbaList}" width="300px" >
-																<m:RadioButton  text="{nbaName}"/>
-															</m:RadioButtonGroup>
-															<!--<m:ComboBox class="sapUiSizeCompact" items="{ path: '/NBA', sorter: { path: 'nbaName' } }">-->
-															<!--	<core:Item key="{key}" text="{nbaName}"/>-->
-															<!--</m:ComboBox>-->
-														</layout:VerticalLayout>
-														<m:TextArea rows="8" class="sapUiSizeCompact" value="{/actionsTaken}"/>
-													</layout:HorizontalLayout>
+											<m:FlexBox fitContainer="true" alignItems="Center">
+												<m:layoutData>
+													<layout:GridData span="L4 M4 S12"/>
+												</m:layoutData>
+												<layout:VerticalLayout>
+													<m:FlexBox wrap="Wrap" visible="false" fitContainer="true" class="sapUiSmallMarginBottom shadowBox">
+														<m:Title text="Previous Bills"/>
+													</m:FlexBox>
+													<m:FlexBox wrap="Wrap" visible="false" fitContainer="true" class="sapUiSmallMarginTop shadowBox">
+														<m:Title text="Other Charts"/>
+													</m:FlexBox>
 												</layout:VerticalLayout>
 											</m:FlexBox>
-										</layout:VerticalLayout>
-									</m:FlexBox>
-									<m:FlexBox fitContainer="true" alignItems="Center">
-										<m:layoutData>
-											<layout:GridData span="L4 M4 S12"/>
-										</m:layoutData>
-										<layout:VerticalLayout>
-											<m:FlexBox wrap="Wrap" visible="false" fitContainer="true" class="sapUiSmallMarginBottom shadowBox">
-												<m:Title text="Previous Bills"/>
-											</m:FlexBox>
-											<m:FlexBox wrap="Wrap" visible="false" fitContainer="true" class="sapUiSmallMarginTop shadowBox">
-												<m:Title text="Other Charts"/>
-											</m:FlexBox>
-										</layout:VerticalLayout>
-									</m:FlexBox>
-								</layout:content>
-							</layout:Grid>
-						</blocks>
-					</ObjectPageSubSection>
-				</subSections>
-			</ObjectPageSection>
-		</sections>
-		<footer>
-			<m:OverflowToolbar>
-				<m:ToolbarSpacer />
-				<m:Button type="Accept" text="Submit"/>
-			</m:OverflowToolbar>
-		</footer>
-	</ObjectPageLayout>
-
+										</layout:content>
+									</layout:Grid>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+				</sections>
+				<footer>
+					<m:OverflowToolbar>
+						<m:ToolbarSpacer/>
+						<m:Button  type="Accept" text="Submit"/>
+						<m:ToolbarSpacer/>
+					</m:OverflowToolbar>
+				</footer>
+			</ObjectPageLayout>
+	
 </mvc:View>
