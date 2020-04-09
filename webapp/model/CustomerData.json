@@ -55,7 +55,7 @@
 		"Current_Non_Energy_Services": "NA",
 		"Last_Late_Payment_Fee": "0$",
 		"Current_Dunning_Step": "FIRST_PAYREMIND"
-	},{
+	}, {
 		"BP_ID": "789",
 		"Connection_ID": "123987",
 		"Premise_ID": "12343",
@@ -83,7 +83,7 @@
 		"Current_Non_Energy_Services": "NA",
 		"Last_Late_Payment_Fee": "0$",
 		"Current_Dunning_Step": "-"
-	},{
+	}, {
 		"BP_ID": "1011",
 		"Connection_ID": "123987",
 		"Premise_ID": "12343",
@@ -216,5 +216,35 @@
 		"nbaName": "Complaint"
 	}, {
 		"nbaName": "Other"
+	}],
+
+	"GraphData": [{
+		"Bill_Number": 1,
+		"Posting_Date": "10-04-2020",
+		"Bill_Amount": 22.5,
+		"Consumption": 450,
+		"Price": 0.05,
+		"Payment_Date": 5
+	}, {
+		"Bill_Number": 2,
+		"Posting_Date": "10-03-2020",
+		"Bill_Amount": 23,
+		"Consumption": 460,
+		"Price": 0.05,
+		"Payment_Date": 4
+	}, {
+		"Bill_Number": 3,
+		"Posting_Date": "10-02-2020",
+		"Bill_Amount": 20.025,
+		"Consumption": 445,
+		"Price": 0.045,
+		"Payment_Date": 0
+	}, {
+		"Bill_Number": 4,
+		"Posting_Date": "11-01-2020",
+		"Bill_Amount": 20.475,
+		"Consumption": 455,
+		"Price": 0.045,
+		"Payment_Date": 0
 	}]
 }
